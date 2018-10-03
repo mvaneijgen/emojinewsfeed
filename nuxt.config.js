@@ -12,7 +12,7 @@ module.exports = {
   ** Headers of the page
   */
   router: {
-    base: "/emojinewsfeed/",
+    base: "emojinewsfeed/",
   },
 
   build: {
