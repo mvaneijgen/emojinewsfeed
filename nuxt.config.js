@@ -1,7 +1,31 @@
+const routerBase =
+  process.env.DEPLOY_ENV === "GH_PAGES"
+    ? {
+        router: {
+          base: "/emojinewsfeed/",
+        },
+      }
+    : {};
+
 module.exports = {
   /*
   ** Headers of the page
   */
+  router: {
+    // base: '/wish-list/',
+  },
+  build: {
+    dir: "docs",
+    // router: {
+    //   base: '/wish-list/',
+    // },
+  },
+  generate: {
+    dir: "docs",
+    // router: {
+    //   base: '/wish-list/',
+    // },
+  },
   head: {
     title: "emojinewsfeed",
     meta: [
@@ -22,7 +46,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: "#3B8070" },
+  loading: { color: "#bd454b" },
   /*
   ** Build configuration
   */
