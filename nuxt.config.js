@@ -12,8 +12,9 @@ module.exports = {
   ** Headers of the page
   */
   router: {
-    // base: '/wish-list/',
+    base: "/emojinewsfeed/",
   },
+
   build: {
     dir: "docs",
     // router: {
