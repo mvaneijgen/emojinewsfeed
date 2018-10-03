@@ -12,9 +12,8 @@ module.exports = {
   ** Headers of the page
   */
   router: {
-    base: "emojinewsfeed/",
+    base: "/emojinewsfeed/",
   },
-
   build: {
     dir: "docs",
     // router: {
@@ -23,9 +22,9 @@ module.exports = {
   },
   generate: {
     dir: "docs",
-    // router: {
-    //   base: '/wish-list/',
-    // },
+    router: {
+      base: "/emojinewsfeed/",
+    },
   },
   head: {
     title: "emojinewsfeed",
@@ -35,10 +34,10 @@ module.exports = {
       { hid: "description", name: "description", content: "Nuxt.js project" },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/fullpage.min.css" },
+      { rel: "icon", type: "image/x-icon", href: "fullpage.min.css" },
       // { rel: "stylesheet", href: "/favicon.ico" },
     ],
-    script: [{ src: "/fullpage.min.js" }],
+    script: [{ src: "fullpage.min.js" }],
   },
   modules: ["@nuxtjs/axios"],
   axios: {
