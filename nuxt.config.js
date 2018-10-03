@@ -12,7 +12,7 @@ module.exports = {
   ** Headers of the page
   */
   router: {
-    base: "/emojinewsfeed/",
+    // base: "/emojinewsfeed/",
   },
   build: {
     dir: "docs",
@@ -22,9 +22,9 @@ module.exports = {
   },
   generate: {
     dir: "docs",
-    router: {
-      base: "/emojinewsfeed/",
-    },
+    // router: {
+    //   base: "/emojinewsfeed/",
+    // },
   },
   head: {
     title: "emojinewsfeed",
