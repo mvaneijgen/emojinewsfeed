@@ -64,7 +64,6 @@ export default {
       // showActiveTooltip: false,
       slidesNavigation: true,
       // slidesNavPosition: 'bottom',
-
       // //Scrolling
       // css3: true,
       // scrollingSpeed: 700,
@@ -74,7 +73,7 @@ export default {
       // scrollBar: false,
       // easing: 'easeInOutCubic',
       // easingcss3: 'ease',
-      // loopBottom: false,
+      loopBottom: true,
       // loopTop: false,
       // loopHorizontal: true,
       // continuousVertical: false,

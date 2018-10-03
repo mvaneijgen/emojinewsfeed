@@ -3,15 +3,17 @@
     <div class="wrapper">
       <div class="inner">
         <div class="alloy-meta">
-          <span class="brand">{{ item.brand }}</span>
+          <span class="brand">@{{ item.brand }}</span>
           <time>{{ item.date }} {{ item.month }} {{ item.year }}</time>
         </div>
         <h2>{{ item.title }}</h2>
         <p>{{ item.content }}</p>
         <img v-if="item.image" :src="item.image + '.jpg'" alt="">
-      </div>
+        <a :href="item.url" target="_blank" class="btn">link</a>
+
       </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -59,5 +61,12 @@ export default {
 }
 img {
   max-width: 400px;
+  display: block;
+}
+.btn {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 </style>
