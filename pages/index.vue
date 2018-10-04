@@ -74,7 +74,7 @@ export default {
       // easing: 'easeInOutCubic',
       // easingcss3: 'ease',
       loopBottom: true,
-      // loopTop: false,
+      loopTop: true,
       // loopHorizontal: true,
       // continuousVertical: false,
       // continuousHorizontal: false,
@@ -119,7 +119,11 @@ export default {
       // //events
       // onLeave: function(origin, destination, direction){},
       // afterLoad: function(origin, destination, direction){},
-      // afterRender: function(){},
+      afterRender: function(){
+        setInterval(function(){
+          fullpage_api.moveSectionDown();
+        }, 3000);
+      },
       // afterResize: function(width, height){},
       // afterResponsive: function(isResponsive){},
       // afterSlideLoad: function(section, origin, destination, direction){},

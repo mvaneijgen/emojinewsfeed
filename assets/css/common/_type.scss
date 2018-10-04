@@ -1,7 +1,7 @@
 body {
   font-family: $font-base;
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.4em;
 }
 @include media-breakpoint-up(md) {
   body {
@@ -53,14 +53,12 @@ header {
 .centered {
   text-align: center;
 }
-.emoji {
-  font-size: 100px;
-  line-height: 1.4em;
-}
 
 h1 {
 }
 h2 {
+  @include responsive-font(2vw, 35px, 150px, 50px);
+  line-height: 1.2em;
 }
 h3 {
 }
@@ -72,4 +70,8 @@ h5 {
 h6 {
 }
 p {
+}
+
+.alloy-meta {
+  margin-bottom: $base-margin * 2;
 }
