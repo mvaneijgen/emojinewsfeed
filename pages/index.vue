@@ -24,6 +24,7 @@ export default {
     const spreadsheetID = '1oV2wxJh54bXS6sixWLqqW1EJnriGRgjwDACIuPnzp9k';
     const sheetId = '0';
     this.$axios.setHeader('Access-Control-Allow-Origin', '*');
+    this.$axios.setHeader('Access-Control-Allow-Headers', '*');
 
     await this.$axios
       .get(`https://cors.io/?https://spreadsheets.google.com/feeds/list/${spreadsheetID}/od6/public/values?alt=json`)
