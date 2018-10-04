@@ -8,7 +8,7 @@
         </div>
         <h2>{{ item.title }}</h2>
         <p>{{ item.content }}</p>
-        <img v-if="item.image" :src="item.image + '.jpg'" alt="">
+        <img v-if="item.image" :src="item.image" alt="">
         <a :href="item.url" target="_blank" class="btn">link</a>
 
       </div>

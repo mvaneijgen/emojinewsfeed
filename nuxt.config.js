@@ -11,21 +11,6 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  router: {
-    // base: "/emojinewsfeed/",
-  },
-  build: {
-    dir: "docs",
-    // router: {
-    //   base: '/wish-list/',
-    // },
-  },
-  generate: {
-    dir: "docs",
-    // router: {
-    //   base: "/emojinewsfeed/",
-    // },
-  },
   head: {
     title: "emojinewsfeed",
     meta: [
@@ -39,6 +24,13 @@ module.exports = {
     ],
     script: [{ src: "fullpage.min.js" }],
   },
+  router: {
+    base: "/emojinewsfeed/",
+  },
+  generate: {
+    dir: "docs",
+  },
+  css: ["@/assets/css/main.scss"],
   modules: ["@nuxtjs/axios"],
   axios: {
     // proxyHeaders: false

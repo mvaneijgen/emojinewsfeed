@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* Rectangle: */
+  background-image: -webkit-linear-gradient(
+    44deg,
+    $brand-one 0%,
+    $brand-two 100%
+  );
+  background-image: -o-linear-gradient(44deg, $brand-one 0%, $brand-two 100%);
+  background-image: linear-gradient(134deg, $brand-one 0%, $brand-two 100%);
+  // background: $brand-one; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   -45deg,
+  //   $brand-one,
+  //   darken($brand-one, 10%),
+  //   darken($brand-one, 20%)
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   -45deg,
+  //   $brand-one,
+  //   darken($brand-one, 10%),
+  //   darken($brand-one, 20%)
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+footer,
+main {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  > section {
+    padding-left: $base-margin;
+    padding-right: $base-margin;
+    // display: flex;
+  }
+}
+@include media-breakpoint-up(md) {
+  footer,
+  main {
+    display: flex;
+    > section {
+      flex-grow: 1;
+      width: 50%;
+    }
+  }
+}
+footer {
+  a {
+    color: $brand-light;
+  }
+}
