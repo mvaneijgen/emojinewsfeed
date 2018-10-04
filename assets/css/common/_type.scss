@@ -57,7 +57,7 @@ header {
 h1 {
 }
 h2 {
-  @include responsive-font(2vw, 35px, 150px, 50px);
+  @include responsive-font(4vw, 35px, 150px, 50px);
   line-height: 1.2em;
 }
 h3 {

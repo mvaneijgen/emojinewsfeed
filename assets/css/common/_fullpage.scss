@@ -1,0 +1,32 @@
+#fp-nav {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  // transform: translateY(-50%);
+  display: block;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $brand-light;
+        opacity: 0.3;
+        font-size: 0px;
+        display: block;
+        margin: 5px;
+        transition: opacity, background-color;
+        transition-duration: 300ms;
+        transition-timing-function: ease;
+        &.active {
+          background-color: $brand-two;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

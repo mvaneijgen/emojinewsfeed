@@ -24,9 +24,9 @@ module.exports = {
     ],
     script: [{ src: "fullpage.min.js" }],
   },
-  // router: {
-  //   base: "/emojinewsfeed/",
-  // },
+  router: {
+    base: "/emojinewsfeed/",
+  },
   generate: {
     dir: "docs",
   },
