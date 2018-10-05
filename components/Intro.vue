@@ -1,18 +1,16 @@
 <template>
   <div class="section">
-    <div class="wrapper alloy-item" :class="'month-' + item.month">
+    <div class="wrapper alloy-item">
       <div class="background">
         <div class="inner">
           <div class="content">
             <div class="alloy-meta">
-              <span class="brand">@{{ item.brand }}</span>
-              <time>{{ item.date }} {{ item.month }} {{ item.year }}</time>
+              <span class="brand">@{{ $store.state.by }}</span>
             </div>
-            <h2><a :href="item.url" target="_blank">{{ item.title }}</a></h2>
-            <p>{{ item.content }}</p>
-            <a :href="item.url" target="_blank" class="btn">link</a>
+            <h1>{{ $store.state.title }}</h1>
+            <p>{{ $store.state.description }}</p>
           </div>
-          <img v-if="item.image" :src="item.image" alt="">
+          <div class="spinner" v-if="!$store.state.loaded"></div>
         </div>
       </div>
     </div>
@@ -21,11 +19,11 @@
 
 <script>
 export default {
-  props: ['item'],
-  name: 'Items',
+  // props: ['item'],
+  name: 'Intro',
   data() {
     return {
-      title: 'Item'
+      title: 'Intro'
     }
   }, // End data
   // More info at https://css-tricks.com/methods-computed-and-watchers-in-vue-js/
@@ -48,3 +46,8 @@ export default {
   // errorCaptured() {},
 }
 </script>
+
+// <style lang="scss" scoped>
+// // @import '~/assets/css/common/_variables.scss';
+//
+</style>

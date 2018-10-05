@@ -24,11 +24,15 @@ h5,
 h6,
 p {
   margin-bottom: $base-margin;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 h1 {
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  font-weight: 800;
+  // text-transform: uppercase;
+  // letter-spacing: 20px;
+  // font-weight: 800;
 }
 footer,
 header {
@@ -54,10 +58,9 @@ header {
   text-align: center;
 }
 
-h1 {
-}
+h1,
 h2 {
-  @include responsive-font(4vw, 35px, 150px, 50px);
+  @include responsive-font(4vw, 35px, 80px, 50px);
   line-height: 1.2em;
 }
 h3 {

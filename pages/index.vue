@@ -1,20 +1,21 @@
 <template>
   <div id="fullpage">
-    <div class="spinner" v-if="!loaded"></div>
+    <Intro></Intro>
     <Items v-for="(item, index) in $store.state.items" :key="index" :item="item"></items>
   </div>
 </template>
 
 <script>
+import Intro from "~/components/Intro.vue";
 import Items from "~/components/Items.vue";
 
 export default {
   components: {
     Items,
+    Intro,
   },
     data() {
     return {
-      loaded: false,
     }
   }, // End data
   async mounted () {
@@ -22,22 +23,9 @@ export default {
     // Google spreadsheet API logic 
     //------------------------------------------------------//
     const spreadsheetID = '1oV2wxJh54bXS6sixWLqqW1EJnriGRgjwDACIuPnzp9k';
-    const sheetId = '0';
-
-    // this.$axios.setHeader('Access-Control-Allow-Origin', '*');
-    // this.$axios.setHeader('Access-Control-Allow-Headers', '*');
-    // // this.$axios.setHeader('Access-Control-Allow-Origin', 'https://cors.io, https://mvaneijgen.nl, http://localhost:3000, *');
-    // // this.$axios.setHeader('Access-Control-Allow-Origin', 'https://mvaneijgen.nl');
-    // // // this.$axios.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-    // // this.$axios.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    // // this.$axios.setHeader('Content-Type', 'application/json');
-        // this.$axios.setHeader('Access-Control-Allow-Origin', '*');
-    // this.$axios.setHeader('Access-Control-Allow-Headers', '*');
-    // this.$axios.setHeader('Access-Control-Allow-Origin', 'https://mvaneijgen.nl');
-    // this.$axios.setHeader('Access-Control-Allow-Headers', 'https://mvaneijgen.nl');
 
     await this.$axios
-      .get(`https://cors.io/?https://spreadsheets.google.com/feeds/list/${spreadsheetID}/od6/public/values?alt=json`)
+      .get(`https://spreadsheets.google.com/feeds/list/${spreadsheetID}/od6/public/values?alt=json`)
       .then(response => {
         const rawData = response.data.feed.entry;
         let resultItems = [];
@@ -56,7 +44,7 @@ export default {
         });
         // console.warn(rawData);
         this.$store.commit('add', resultItems);
-        this.loaded = true;
+        // this.loaded = true;
       })
       .catch(function(error) {
         // this.$store.commit('error', error);

@@ -7,18 +7,26 @@
     height: 100%;
     width: 100%;
     background-color: $brand-one;
-
-    .inner {
-      max-width: 800px;
-      position: relative;
+    .background {
+      max-width: 900px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $brand-two;
     }
-  }
-  .content {
-    position: relative;
-    z-index: 100;
-    text-shadow: 2px 2px 5px rgba($brand-dark, $base-alpha);
-    @include media-breakpoint-up(md) {
-      margin-left: 75px;
+    .inner {
+      position: relative;
+
+      .content {
+        position: relative;
+        z-index: 100;
+        text-shadow: 2px 2px 5px rgba($brand-dark, $base-alpha);
+        @include media-breakpoint-up(md) {
+          // margin-left: 75px;
+          padding: $base-margin * 8;
+        }
+      }
     }
   }
   img {
@@ -27,7 +35,7 @@
     left: 0;
     max-width: 400px;
     display: block;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(0);
     // z-index: -1;
   }
 }
@@ -44,11 +52,17 @@
 $months: january february march april may june july august september october
   november december;
 $colors: $brand-one $brand-two $brand-three $brand-four $brand-five $brand-six
-  $brand-seven $brand-eight $brand-nine $brand-ten $brand-eleven $brand-twelfth;
+  $brand-seven $brand-eight $brand-nine $brand-ten $brand-eleven $brand-twelfth
+  $brand-one;
 @each $current-month in $months {
   $i: index($months, $current-month);
-  .month-#{$current-month} {
+  .alloy-item.month-#{$current-month} {
     background-color: nth($colors, $i) !important;
+    .background {
+      $j: $i + 1;
+      color: nth($colors, $i);
+      background-color: nth($colors, $j);
+    }
   }
 }
 //------------------------------------------------------//
