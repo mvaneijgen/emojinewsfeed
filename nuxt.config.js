@@ -34,7 +34,9 @@ module.exports = {
   css: ["@/assets/css/main.scss"],
   modules: ["@nuxtjs/axios"],
   axios: {
-    // proxyHeaders: false
+    headers: {
+      // "Access-Control-Allow-Origin": "*",
+    },
   },
   /*
   ** Customize the progress bar color
