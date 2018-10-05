@@ -7,7 +7,7 @@
             <div class="alloy-meta">
               <span class="brand">@{{ $store.state.by }}</span>
             </div>
-            <h1>{{ $store.state.title }}</h1>
+            <h1><a :href="this.$store.state.url">{{ $store.state.title }}</a></h1>
             <p>{{ $store.state.description }}</p>
           </div>
           <div class="spinner" v-if="!$store.state.loaded"></div>

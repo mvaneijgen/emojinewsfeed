@@ -16,6 +16,7 @@
       justify-content: center;
       align-items: center;
       background-color: $brand-two;
+      overflow: hidden;
     }
     .inner {
       position: relative;
@@ -23,7 +24,7 @@
       .content {
         position: relative;
         z-index: 100;
-        text-shadow: 2px 2px 5px rgba($brand-dark, $base-alpha);
+        // text-shadow: 2px 2px 5px rgba($brand-dark, $base-alpha);
         padding: $base-margin;
         @include media-breakpoint-up(md) {
           // margin-left: 75px;
@@ -36,11 +37,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    max-width: 400px;
+    max-width: 200px;
     display: block;
-    transform: translateX(35%) translateY(-50%);
+    transform: translateX(25%) translateY(-25%);
     // z-index: -1;
     @include media-breakpoint-up(md) {
+      max-width: 400px;
       transform: translateX(50%) translateY(0);
     }
   }

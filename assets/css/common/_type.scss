@@ -1,6 +1,6 @@
 body {
   font-family: $font-base;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4em;
 }
 @include media-breakpoint-up(md) {
@@ -60,7 +60,7 @@ header {
 
 h1,
 h2 {
-  @include responsive-font(4vw, 35px, 80px, 50px);
+  @include responsive-font(3vw, 30px, 80px, 50px);
   line-height: 1.2em;
 }
 h3 {

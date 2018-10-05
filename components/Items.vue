@@ -10,7 +10,6 @@
             </div>
             <h2><a :href="item.url" target="_blank">{{ item.title }}</a></h2>
             <p>{{ item.content }}</p>
-            <a :href="item.url" target="_blank" class="btn">link</a>
           </div>
           <img v-if="item.image" :src="item.image" alt="">
         </div>
