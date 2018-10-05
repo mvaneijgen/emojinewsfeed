@@ -4,7 +4,6 @@ const routerBase =
         router: {
           base: "/emojinewsfeed/",
         },
-        axios: {},
       }
     : {};
 
