@@ -26,8 +26,8 @@ export default {
 
     // this.$axios.setHeader('Access-Control-Allow-Origin', '*');
     // this.$axios.setHeader('Access-Control-Allow-Headers', '*');
-    this.$axios.setHeader('Access-Control-Allow-Origin', 'https://mvaneijgen.nl');
-    this.$axios.setHeader('Access-Control-Allow-Headers', 'https://mvaneijgen.nl');
+    // this.$axios.setHeader('Access-Control-Allow-Origin', 'https://mvaneijgen.nl');
+    // this.$axios.setHeader('Access-Control-Allow-Headers', 'https://mvaneijgen.nl');
 
     await this.$axios
       .get(`https://cors.io/?https://spreadsheets.google.com/feeds/list/${spreadsheetID}/od6/public/values?alt=json`)
