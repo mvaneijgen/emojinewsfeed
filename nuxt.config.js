@@ -4,6 +4,7 @@ const routerBase =
         router: {
           base: "/emojinewsfeed/",
         },
+        axios: {},
       }
     : {};
 
@@ -25,11 +26,12 @@ module.exports = {
     script: [{ src: "fullpage.min.js" }],
   },
   router: {
-    base: "/emojinewsfeed/",
+    // base: "/emojinewsfeed/",
   },
   generate: {
     dir: "docs",
   },
+  ...routerBase,
   css: ["@/assets/css/main.scss"],
   modules: ["@nuxtjs/axios"],
   axios: {
