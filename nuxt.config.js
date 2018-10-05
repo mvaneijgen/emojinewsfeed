@@ -35,7 +35,7 @@ module.exports = {
   modules: ["@nuxtjs/axios"],
   axios: {
     headers: {
-      // "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "*",
     },
   },
   /*
