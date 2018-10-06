@@ -9,9 +9,9 @@
               <time>{{ item.date }} {{ item.month }} {{ item.year }}</time>
             </div>
             <h2><a :href="item.url" target="_blank">{{ item.title }}</a></h2>
+            <img v-if="item.image" :src="item.image" alt="">
             <p>{{ item.content }}</p>
           </div>
-          <img v-if="item.image" :src="item.image" alt="">
         </div>
       </div>
     </div>
