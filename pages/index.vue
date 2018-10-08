@@ -62,7 +62,7 @@ export default {
       afterRender: function(){
         setInterval(function(){
           fullpage_api.moveSectionDown();
-        }, 6000);
+        }, 1800);
       },
     });
     
