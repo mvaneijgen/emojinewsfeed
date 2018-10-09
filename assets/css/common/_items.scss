@@ -23,7 +23,7 @@
     .inner {
       position: relative;
       @include media-breakpoint-up(md) {
-        margin-right: $base-margin * 6;
+        // margin-right: $base-margin * 6;
       }
       .content {
         position: relative;
