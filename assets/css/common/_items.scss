@@ -42,24 +42,30 @@
       }
     }
   }
-  @include media-breakpoint-down(md) {
-    img {
-      max-width: 100%;
-      width: 150px;
-      // float: right;
-      padding: $base-margin;
-    }
+  img {
+    max-width: 100%;
+    width: 150px;
+    // float: right;
+    padding: $base-margin;
   }
   @include media-breakpoint-up(md) {
+    width: 350px;
+  }
+  @media (max-width: 330px) {
     img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      max-width: 350px;
-      transform: translateX(70%) translateY(0);
+      display: none;
     }
   }
+  // @include media-breakpoint-up(md) {
+  //   img {
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //     display: block;
+  //     max-width: 350px;
+  //     transform: translateX(70%) translateY(0);
+  //   }
+  // }
 }
 .btn {
   background-color: #fff;

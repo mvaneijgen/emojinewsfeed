@@ -58,7 +58,7 @@ export default {
       navigationPosition: 'right',
       slidesNavigation: true,
       loopBottom: true,
-      loopTop: true,
+      loopTop: false,
       afterRender: function(){
         setInterval(function(){
           fullpage_api.moveSectionDown();
