@@ -51,15 +51,13 @@ module.exports = {
       display: "standalone",
     },
     link: [
+      { rel: "stylesheet", href: "fullpage.min.css" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "icon",
         type: "image/x-icon",
         href: "https://emojinewsfeed.com/favicon.ico",
       },
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "fullpage.min.css" },
-      // { rel: "stylesheet", href: "/favicon.ico" },
     ],
     script: [{ src: "fullpage.min.js" }],
   },
