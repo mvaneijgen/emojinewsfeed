@@ -8,6 +8,7 @@
               <span class="brand">@{{ $store.state.by }}</span>
             </div>
             <h1><a :href="this.$store.state.url">{{ $store.state.title }}</a></h1>
+            <img v-if="this.$store.state.image" :src="this.$store.state.image" alt="Hand pointing down emoji">
             <p>{{ $store.state.description }}</p>
           </div>
           <div class="spinner" v-if="!$store.state.loaded"></div>

@@ -8,8 +8,9 @@ const createStore = () => {
       errors: [],
       title: "Emoji News Feed",
       by: "Lilian Stolk",
+      image: "https://i.imgur.com/dsJ23xG.png",
       description:
-        "Emoji staat sinds 2014 standaard op onze telefoons geïnstalleerd. Het komt oorspronkelijk uit Japan en dat de figuren op de iPhone staan was in eerste instantie vooral voor Japanse gebruikers bedoeld. Nu de hele wereld emoji gebruikt wil ook de hele wereld zich gerepresenteerd zien. Die discussie, over wat er op het toetsenbord staat en hoe dat eruit ziet/moet zien, wil ik met die newsfeed laten zien. Van de kaas die verkeerd ligt op Google’s burger emoji. Tot transgenders die de kreeft-emoji gebruiken, omdat de transgendervlag nog niet door de selectie is gekomen.",
+        "Emoji originated in Japan and have been installed as a standard international keyboard on our phones since 2012. Since they are used all over the world, the typically Japanese rice dishes in the food category, for instance, have been supplemented with tacos, broccoli and cheese. We are currently defining and shaping this universal visual language, which is a fascinating process.",
     },
     mutations: {
       add(state, payload) {
