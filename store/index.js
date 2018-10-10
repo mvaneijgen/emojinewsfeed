@@ -8,6 +8,7 @@ const createStore = () => {
       errors: [],
       title: "Emoji News Feed",
       by: "Lilian Stolk",
+      site: "//lilianstolk.com",
       image: "https://i.imgur.com/dsJ23xG.png",
       description:
         "Emoji originated in Japan and have been installed as a standard international keyboard on our phones since 2012. Since they are used all over the world, the typically Japanese rice dishes in the food category, for instance, have been supplemented with tacos, broccoli and cheese. We are currently defining and shaping this universal visual language, which is a fascinating process.",

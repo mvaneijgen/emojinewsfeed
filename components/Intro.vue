@@ -5,9 +5,9 @@
         <div class="inner">
           <div class="content">
             <div class="alloy-meta">
-              <span class="brand">@{{ $store.state.by }}</span>
+              <span class="brand"><a :href="$store.state.site" target="_blank">@{{ $store.state.by }}</a></span>
             </div>
-            <h1><a :href="this.$store.state.url">{{ $store.state.title }}</a></h1>
+            <h1><a :href="this.$store.state.site" target="_blank">{{ $store.state.title }}</a></h1>
             <img v-if="this.$store.state.image" :src="this.$store.state.image" alt="Hand pointing down emoji">
             <p>{{ $store.state.description }}</p>
           </div>

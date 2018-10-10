@@ -1,4 +1,8 @@
 .alloy-item {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   &.wrapper {
     display: flex;
     justify-content: center;
